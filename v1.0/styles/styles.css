@@ -97,13 +97,12 @@ li {
 .tiles{
 
   color: rgba(0,0,0,0.55);
-
+  margin-right: auto;
+  margin-left: auto;
 
 }
 .row {
   display: flex; /* equal height of the children */
-  margin-right: auto;
-  margin-left: auto;
 }
 .header {
 
