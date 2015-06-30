@@ -47,12 +47,10 @@ li {
 }
 .container2 {
 
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(20%);
-  -ms-transform: translateY(20%);
-  transform: translateY(20%);
-  bottom: 50%;
+  max-height: 80%;
+  max-width: 100%;
+  margin-top: 10%;
+  
 
 }
 .searchselect {
