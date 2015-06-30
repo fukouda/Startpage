@@ -1,0 +1,174 @@
+body {
+
+  background-image: url("../images/wallpaper.png");
+  background-size: cover;
+  word-wrap: break-word;
+  overflow: visible;
+
+}
+hr {
+  width: 80%;
+  border-color: rgba(0,0,0,0.25);
+  background-color: rgba(0,0,0,0.05);
+  box-shadow: none;
+}
+a:link {
+
+  color: rgba(0,0,0,0.55);
+
+}
+a:visited {
+
+  color: rgba(0,0,0,0.55);
+
+}
+a:hover {
+
+  color: rgba(0,0,0,0.55);
+  letter-spacing: 0.7px;
+
+}
+a:active {
+
+  color: rgba(0,0,0,0.55);
+
+}
+li {
+
+  margin-bottom: 5px;
+
+}
+
+.container2 {
+
+  max-height: 80vh;
+  max-width: 90vw;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+.searchselect {
+
+  border: 0;
+  box-shadow: none;
+  background-color: rgba(0,50,0,0.1);
+  color: rgba(0,50,0,0.6);
+  width: 17.6%;
+  padding: 5px 5px 5px 5px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor: pointer;
+  text-align: center;
+
+}
+.formsearchbar{
+
+  background-color: inherit;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.searchbar {
+
+  border: none;
+  box-shadow: none;
+  background-color: rgba(0,50,0,0.1);
+  padding: 5px 5px 5px 5px;
+  width: 78%;
+  margin-left: 1.8%;
+  display: inline-block;
+  text-align: center;
+  color: rgba(0,50,0,0.4);
+
+}
+.tiles{
+
+  color: rgba(0,0,0,0.55);
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.row {
+  display: flex; /* equal height of the children */
+}
+.header {
+
+  font-weight: lighter;
+  margin-bottom: 0px;
+
+}
+.clock {
+
+  font-size: 6em;
+  margin-bottom: 0px;
+
+}
+.links {
+
+  position: relative;
+  list-style-image: url('../images/arrow16.png');
+  padding-left: 80px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 100%;
+
+}
+.quotes {
+
+  font-weight: 500;
+  padding: 5px 5px 15px 5px;
+
+}
+.boxes {
+
+  display: inline-block;
+  background-color: rgba(240, 240, 240, 1);
+  box-shadow: -3px 4px 0px 0px rgba(0,0,0,0.45);
+  border: none;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 8px;
+  margin-right: 1%;
+
+}
+.box1 {
+
+  float: left;
+  width: 19%;
+  margin-left: auto;
+}
+.box2 {
+
+  width: 40%;
+
+}
+.box3 {
+
+  width: 19%;
+  margin-right: auto;
+
+}
+.box4 {
+
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+.box5 {
+
+  width: 45%;
+  margin-left: auto;
+  
+}
+.box6 {
+
+  width: 34%;
+  margin-right: auto;
+  
+}

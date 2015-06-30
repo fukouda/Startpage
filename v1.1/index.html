@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<script src="scripts/functions.js"></script>
+<script src="scripts/jquery-2.1.4.min.js"></script>
+
+<script>
+
+  $.getJSON("http://api.theysaidso.com/qod.json", function(data) {
+
+  var quote = data.contents.quote;
+  var source = data.contents.author;
+
+  document.getElementById("bigBox").innerHTML = quote + " - " + source;
+
+});
+</script>
+</head>
+
+<body onload="defaultfunc()">
+   <div class="container2">
+      <form method="get" id="search" class="formsearchbar">
+        <input id="googlesearch" type="search" name="q" class="searchbar" placeholder="Search..." autofocus="autofocus" autocomplete="off"></input>
+        <select id="searchSource" onchange="dropdownSelect()" class="searchselect">
+          <option value="https://google.ca/search" selected>Google</option>
+          <option value="https://github.com/search">Github</option>
+          <option value="http://www.reddit.com/search">Reddit</option>
+        </select>
+      </form>
+      <div class="tiles">
+
+        <div class="row">
+          <div class="boxes box1">
+            <h2 class="header">Entertainment</h2>
+            <hr/>
+            <ul class="links">
+              <li><a href="http://boards.4chan.org/a/" class="bigLink">/a/ - Anime and Manga</a></li>
+              <li><a href="http://boards.4chan.org/g/" class="bigLink">/g/ - Technology</a></li>
+              <li><a href="http://boards.4chan.org/sci/" class="bigLink">/sci/ - Science & Math</a></li>
+              <li><a href="https://www.netflix.com" class="bigLink">Netflix</a></li>
+              <li><a href="http://www.reddit.com/" class="bigLink">Reddit</a></li>
+              <li><a href="https://www.youtube.com" class="bigLink">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="boxes box2">
+            <h1 class="clock" id="clock">
+              <script type="text/javascript">
+    						    getSomeTime();
+    			          setInterval("getSomeTime()", 1000);
+              </script>
+            </h1>
+            <hr/>
+            <h2 class="header" id="date1">
+              <script type="text/javascript">
+                getSomeDate();
+                setInterval("getSomeDate()", 100000);
+              </script>
+            </h2>
+          </div>
+          <div class="boxes box3">
+            <h2 class="header">Programming</h2>
+            <hr/>
+            <ul class="links">
+              <li><a href="https://github.com/" class="bigLink">Github</a></li>
+              <li><a href="http://stackoverflow.com/" class="bigLink">Stack Overflow</a></li>
+              <li><a href="http://www.reddit.com/r/learnprogramming/" class="bigLink">/r/learnprogramming</a></li>
+              <li><a href="http://www.reddit.com/r/unixporn/" class="bigLink">/r/unixporn</a></li>
+              <li><a href="https://www.youtube.com/watch?v=2Op3QLzMgSY&list=PL8FE88AA54363BC46" class="bigLink">SICP Lectures</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="boxes box4">
+            <h3 class="header quotes" id="bigBox">They who can give up essential liberty to obtain a little temporary safety deserve neither liberty nor safety. - Benjamin Franklin</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="boxes box5">
+            <h2 class="header">Miscellaneous</h2>
+            <hr/>
+            <ul class="links">
+              <li><a href="https://www.coursera.org" class="bigLink">Coursera</a></li>
+              <li><a href="http://www.last.fm/" class="bigLink">Last.fm</a></li>
+              <li><a href="https://soundcloud.com/" class="bigLink">Soundcloud</a></li>
+              <li><a href="http://www.nyaa.se/" class="bigLink">Nyaa.se</a></li>
+              <li><a href="http://kat.cr/" class="bigLink">Kickass Torrents</a></li>
+            </ul>
+          </div>
+          <div class="boxes box6">
+            <h2 class="header">Tools</h2>
+            <hr/>
+            <ul class="links">
+              <li><a href="https://mail.google.com" class="bigLink">Gmail</a></li>
+              <li><a href="https://login.live.com" class="bigLink">Windows Live Mail</a></li>
+              <li><a href="https://app.tutanota.de/#login" class="bigLink">Tutanota</a></li>
+              <li><a href="http://repl.it/languages" class="bigLink">Repl.it</a></li>
+              <li><a href="https://maxfile.ro/" class="bigLink">Maxfile (Pomf.se is gone)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+   </div>
+</body>
+<footer>
+</footer>
+</html>
