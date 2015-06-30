@@ -101,7 +101,9 @@ li {
 
 }
 .row {
-    display: flex; /* equal height of the children */
+  display: flex; /* equal height of the children */
+  margin-right: auto;
+  margin-left: auto;
 }
 .header {
 
